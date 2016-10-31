@@ -3,8 +3,8 @@
 from random import randint
 
 def roll(sides, times):
-    if times == 0:
-        print("You can't not roll the dice!")
+    if times == 0 or sides == 0:
+        print("You can't do that!")
         return False
 
     while times > 0:
