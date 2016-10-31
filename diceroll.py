@@ -3,7 +3,7 @@
 from random import randint
 
 def roll(sides, times):
-    if times == 0 or sides == 0:
+    if times <= 0 or sides <= 0:
         print("You can't do that!")
         return False
 
